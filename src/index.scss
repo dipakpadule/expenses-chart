@@ -1,0 +1,22 @@
+$font-family: 'DM Sans', sans-serif;
+
+$Soft-red: #ec775f;
+$Cyan: #76b5bc;
+$Dark-brown: hsl(25, 47%, 15%);
+$Medium-brown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$Very-pale-orange: hsl(33, 100%, 98%);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: $font-family;
+  font-size: 1.125rem;
+  background: $Cream;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}

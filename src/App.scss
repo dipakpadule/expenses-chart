@@ -1,0 +1,115 @@
+$Soft-red: #ec775f;
+$Cyan: #76b5bc;
+$Dark-brown: hsl(25, 47%, 15%);
+$Medium-brown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$Very-pale-orange: hsl(33, 100%, 98%);
+
+.expense-card{
+  width: 21.44rem;
+  height: 33.44rem;
+  margin: 4.16rem 1rem;
+
+  .ec-header{
+    width: 100%;
+    height: 6rem;
+    background: $Soft-red;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    .ec-balance{
+      p{
+        margin-bottom: 0.5rem;
+        color: $Very-pale-orange;
+      }
+      h1{
+        font-size: 1.55rem;
+        color: $Very-pale-orange;
+      }
+    }
+  }
+
+  .ec-main{
+    width: 100%;
+    height: 26.31rem;
+    background: $Very-pale-orange;
+    border-radius: 0.7rem;
+    padding: 2rem 1.5rem;
+
+    .ec-chart{
+      width: 100%;
+      height: 15.7rem;
+
+      strong{
+        color: $Dark-brown;
+      }
+    }
+    canvas{
+      margin-bottom: 1.2rem;
+    }
+    hr{
+      border: none;
+      height: 1px;
+      background: $Medium-brown;
+      margin: 1.75rem 0;
+    }
+    .ec-total{
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .ec-total-month{
+        p{
+          color: $Medium-brown;
+          letter-spacing: -1px;
+        }
+        strong{
+          font-size: 1.6rem;
+          color: $Dark-brown;
+        }
+      }
+      .ec-total-diff{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+
+        strong{
+          font-size: 1rem;
+          color: $Dark-brown;
+        }
+        p{
+          color: $Medium-brown;
+          letter-spacing: -1px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:90rem){
+  .expense-card{
+    width: 33.75rem;
+    height: 41.25rem;
+    margin: 11.37rem 28.12rem;
+  
+    .ec-header{
+      width: 100%;
+      height: 7.87rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .ec-main{
+      width: 100%;
+      height: 31.87rem; 
+
+      .ec-chart{
+        width: 100%;
+        height: 20.62rem;
+      }
+    }
+  }
+}
